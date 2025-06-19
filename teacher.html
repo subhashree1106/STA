@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Teacher Dashboard</h1>
+
+  <div class="nav">
+    <a href="admin.html">Admin</a>
+    <a href="student.html">Student</a>
+    <a href="teacher.html">Teacher</a>
+  </div>
+
+  <!-- Login -->
+  <section id="loginSection">
+    <h2>Teacher Login</h2>
+    <input type="text" id="teacherLoginName" placeholder="Enter your name" />
+    <button onclick="loginTeacher()">Login</button>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" style="display:none;">
+    <h2>Welcome, <span id="teacherNameLabel"></span></h2>
+
+    <div class="card">
+      <h3>Schedule Availability</h3>
+      <input type="text" id="scheduleTime" placeholder="e.g. Monday 10am-12pm">
+      <button onclick="addSchedule()">Add Available Slot</button>
+      <ul id="availabilityList"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Pending Appointments</h3>
+      <ul id="pendingAppointmentsList"></ul>
+    </div>
+
+    <div class="card">
+      <h3>All Appointments</h3>
+      <ul id="allAppointmentsList"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Messages from Students</h3>
+      <ul id="teacherMessagesList"></ul>
+    </div>
+
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

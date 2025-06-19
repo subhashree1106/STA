@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Panel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Student Dashboard</h2>
+
+  <h3>Register</h3>
+  <input id="sName" placeholder="Name" />
+  <button onclick="registerStudent()">Register</button>
+
+  <h3>Search Teachers</h3>
+  <ul id="teacherSearchResults"></ul>
+
+  <h3>Book Appointment</h3>
+  <input id="appointmentTeacher" placeholder="Teacher Name" />
+  <input id="appointmentTime" placeholder="Time" />
+  <button onclick="bookAppointment()">Book</button>
+
+  <h3>Send Message</h3>
+  <input id="msgTeacher" placeholder="Teacher Name" />
+  <input id="msgText" placeholder="Message" />
+  <button onclick="sendMessage()">Send</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

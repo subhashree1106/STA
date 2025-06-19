@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase SDKs -->
+  <script type="module" src="admin.js" defer></script>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <section>
+    <h2>Add Teacher</h2>
+    <input type="text" id="tName" placeholder="Name">
+    <input type="text" id="tDept" placeholder="Department">
+    <input type="text" id="tSubject" placeholder="Subject">
+    <button onclick="addTeacher()">Add Teacher</button>
+  </section>
+
+  <section>
+    <h2>All Teachers</h2>
+    <ul id="teacherList"></ul>
+  </section>
+
+  <section>
+    <h2>Approve Student Registrations</h2>
+    <ul id="studentList"></ul>
+  </section>
+   <script src="script.js"></script>
+</body>
+</html>
